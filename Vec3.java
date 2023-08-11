@@ -82,4 +82,8 @@ public class Vec3 {
         np = Vec3.rotate_x(np, -camera.rot.x, new Vec3());
         return np;
     }
+
+    public boolean zero_vector() {
+        return this.x == 0 && this.y == 0 && this.z == 0;
+    }
 }
